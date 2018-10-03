@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <title>AJAX fetch</title>
+</head>
+
+<body>
+    <div id="input-panel">
+        <div>
+            <h4>ImageType</h4>
+            <div>
+                <input type="radio" name="image-type" checked value="all">
+                <label>All</label>
+            </div>
+            <div>
+                <input type="radio" name="image-type" value="photo">
+                <label>Photo</label>
+            </div>
+            <div>
+                <input type="radio" name="image-type" value="illustration">
+                <label>Illustration</label>
+            </div>
+            <div>
+                <input type="radio" name="image-type" value="vector">
+                <label>Vector</label>
+            </div>
+        </div>
+        <div id="orientation">
+            <h4>Orientation</h4>
+            <div>
+                <input type="radio" name="orientation" checked value="all">
+                <label>All</label>
+            </div>
+            <div>
+                <input type="radio" name="orientation" value="horizontal">
+                <label>horizontal</label>
+            </div>
+            <div>
+                <input type="radio" name="orientation">
+                <label>Vertical</label>
+            </div>
+        </div>
+        <div>
+            <h4>Category</h4>
+            <div id="category-selectionText">category</div>
+            <div id="category-img-container">
+                <img src="./category/fashion.jpg" title="fashion">
+                <img src="./category/nature.jpg" title="nature">
+                <img src="./category/background.jpg" title="background">
+                <img src="./category/science.jpg" title="science">
+                <img src="./category/education.jpg" title="education">
+                <img src="./category/people.jpg" title="people">
+                <img src="./category/feelings.jpg" title="feelings">
+                <img src="./category/religion.jpg" title="religion">
+                <img src="./category/health.jpg" title="health">
+                <img src="./category/places.jpg" title="places">
+                <img src="./category/animals.jpg" title="animals">
+                <img src="./category/industry.jpg" title="industry">
+                <img src="./category/food.jpg" title="food">
+                <img src="./category/computer.jpg" title="computer">
+                <img src="./category/sports.jpg" title="sports">
+                <img src="./category/transportation.jpg" title="transportation">
+                <img src="./category/travel.jpg" title="travel">
+                <img src="./category/buildings.jpg" title="buildings">
+                <img src="./category/business.jpg" title="business">
+                <img src="./category/music.jpg" title="music">
+
+
+            </div>
+        </div>
+        <div>
+            <h4>Colors</h4>
+            <div id="color-container">
+                <ul>
+                    <li id="greyscale">
+                        <input type="radio" name="color"> greyscale
+                    </li>
+                    <li id="transparent">
+                        <input type="radio" name="color">transparent
+                    </li>
+                    <li id="red">
+                        <input type="radio" name="color">red
+                    </li>
+                    <li id="orange">
+                        <input type="radio" name="color">orange
+                    </li>
+                    <li id="yellow">
+                        <input type="radio" name="color">yellow
+                    </li>
+                    <li id="green">
+                        <input type="radio" name="color">green
+                    </li>
+                    <li id="turquoise">
+                        <input type="radio" name="color">turquoise
+                    </li>
+                    <li id="blue">
+                        <input type="radio" name="color">blue
+                    </li>
+                    <li id="lilac">
+                        <input type="radio" name="color">lilac
+                    </li>
+                    <li id="pink">
+                        <input type="radio" name="color">pink
+                    </li>
+                    <li id="white">
+                        <input type="radio" name="color">white
+                    </li>
+                    <li id="grey">
+                        <input type="radio" name="color">gray
+                    </li>
+                    <li id="black">
+                        <input type="radio" name="color">black
+                    </li>
+                    <li id="brown">
+                        <input type="radio" name="color">brown
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h4>EditorsChoice</h4>
+        </div>
+        <div>
+            <h4>Safesearch</h4>
+        </div>
+        <div>
+            <h4>Order</h4>
+        </div>
+    </div>
+    <div id="search">
+        <h2>Search</h2>
+        <input type="text" id="search-text">
+        <button id="search-btn">Show Images</button>
+        <button id="search-clear">Clear</button>
+    </div>
+    <div id="stage">
+
+    </div>
+
+</body>
+
+</html>
